@@ -235,7 +235,8 @@ def get_messages(tree_id: str):
         elif now.month == 12:
             if now.day < 25:
                 is_locked = True
-            elif now.day == 25 and now.hour < 5:
+            # CHANGED: Changed '5' to '0' (Midnight UTC = 5:30 AM IST)
+            elif now.day == 25 and now.hour < 0: 
                 is_locked = True
         
         if is_locked:
