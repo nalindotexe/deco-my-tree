@@ -1,3 +1,4 @@
 db.json
-.envnode_modules/
-venv
+.env
+node_modules/
+venv/
